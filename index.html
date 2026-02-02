@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halmgaard Wiki</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Google AdSense verification -->
+    <meta name="google-adsense-account" content="ca-pub-6607892053217120">
+
+    <!-- Open Graph / Discord embeds -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="HalmGaard Wiki">
+    <meta property="og:description"
+        content="Explore HalmGaard — a fun and immersive 2D game experience made by Gruset. Play, create, and enjoy!">
+    <meta property="og:image"
+        content="https://github.com/Lkings2D/Lkings2D.github.io/blob/main/Halmgaard/Logo.png?raw=true">
+    <meta property="og:url" content="https://lkings2d.github.io/">
+</head>
+
+<body>
+
+    <header>
+        <h1 style="text-align: center; margin-top: 10px;">Halmgaard Wiki</h1>
+        <nav>
+            <div class="wiki-search" role="search">
+                <input id="wiki-search-input" type="search" placeholder="Search items & mobs"
+                    aria-label="Search items and mobs" autocomplete="off">
+                <button id="wiki-search-btn" type="button">Search</button>
+                <div id="wiki-search-suggestions" class="wiki-search-suggestions" role="listbox"
+                    aria-label="Search suggestions"></div>
+            </div>
+            <button id="dark-mode-btn">🌙 Dark Mode</button>
+        </nav>
+    </header>
+
+    <div class="page-wrapper" style="margin-top: 50px; display: flex; gap: 20px; align-items: flex-start;">
+
+        <!-- Sidebar column (image + sidebar stacked vertically) -->
+        <div class="sidebar-column" style="display: flex; flex-direction: column; gap: 10px; flex: 0 0 200px;">
+
+            <!-- Image above the sidebar, now clickable -->
+            <img src="/Halmgaard/Logo.png" alt="Top Image" class="sidebar-top-image" style="cursor: pointer;"
+                onclick="loadContent('/');">
+
+            <!-- Links Section -->
+            <div class="content-box Essentials-box" id="essentials-mobile" style="padding: 20px; margin-bottom: 0px;">
+                <h3 style="margin-top: 0; text-align: center; color: #2563eb;">Essentials</h3>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <a href="https://discord.gg/cj42ACTEXv" target="_blank"
+                        style="display: block; padding: 12px; background: linear-gradient(135deg, #5865F2, #4752C4); color: white; text-decoration: none; border-radius: 8px; text-align: center; font-weight: bold; transition: transform 0.3s;">
+                        Halmgaard Discord
+                    </a>
+                    <a href="https://halmgaard.com" target="_blank"
+                        style="display: block; padding: 12px; background: linear-gradient(135deg, #ff8c00, #ffd700); color: white; text-decoration: none; border-radius: 8px; text-align: center; font-weight: bold; transition: transform 0.3s;">
+                        Halmgaard Website
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sidebar - Desktop Only -->
+            <div class="content-box sidecontentbox" id="quicklinks-desktop" style="padding: 20px; margin-bottom: 0px;">
+                <div class="vertical-sidebar">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html" onclick="event.preventDefault(); loadContent('/');">Home</a></li>
+                        <li><a href="Halmgaard/TermsService.html"
+                                onclick="event.preventDefault(); loadContent('/Halmgaard/TermsService/');">Terms of
+                                Service</a></li>
+                        <li><a href="Halmgaard/PrivacyPolicy.html"
+                                onclick="event.preventDefault(); loadContent('/Halmgaard/PrivacyPolicy/');">Privacy and
+                                Policy</a></li>
+                        <li><a href="Halmgaard/AboutPage/index.html"
+                                onclick="event.preventDefault(); loadContent('/Halmgaard/AboutPage/');">About Page</a>
+                        </li>
+                        <li><a href="Halmgaard/ContactPage/index.html"
+                                onclick="event.preventDefault(); loadContent('/Halmgaard/ContactPage/');">Contact
+                                Page</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 0px; padding: 0px; margin-left: 0px;">
+            <!-- Content Box -->
+            <div class="content-box" style="margin-bottom: 0px;">
+                <div class="ad-demo top-ad-demo">
+                    TOP BANNER
+                </div>
+
+                <div class="content-box" style="margin-bottom: 20px;">
+
+                    <div class="wiki-content" style="text-align: center; max-width: 800px; margin: auto;"
+                        id="main-content">
+
+                        <h1><b>Welcome to Halmgaard Wiki</b></h1>
+
+                        <p>
+                            <span class="muted">Halmgaard</span> is an immersive MMO developed by <span
+                                class="muted">Gruset</span>, heavily inspired by the classic MMORPG Tibia and similar
+                            games.
+                        </p>
+
+                        <p>
+                            Set in a vast, open world, Halmgaard offers players the freedom to explore diverse
+                            environments, engage in strategic combat, and embark on epic quests. With a focus on
+                            community interaction and challenging gameplay, players can form alliances, discover hidden
+                            treasures, and build their legacy in a world full of danger and adventure.
+                        </p>
+
+                        <p class="accent">
+                            Whether you're battling fierce monsters, mastering skills, or uncovering ancient secrets,
+                            Halmgaard promises a nostalgic yet fresh experience for all MMO enthusiasts.
+                        </p>
+
+                        <p>
+                            <span class="muted">Wiki Editors:</span> Lkings, Canuck
+                        </p>
+
+                        <p>
+                            <span class="muted">Wiki Contributers:</span> Gruset [<span style="color: red;">Game
+                                Developer</span>]
+                        </p>
+
+                        <p class="accent">
+                            To help or add content to the Wiki, submit a message in the wiki-feedback channel, in the
+                            Official Halmgaard Discord.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="box-container">
+
+                    <!-- Box 1 -->
+                    <section id="box1" class="box"
+                        style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
+                        <img src="/Items/images/80CROSSBOW copy.png" alt="Box 1"
+                            style="max-width: 40%; height: auto;margin-top: 30px;">
+                        <p><a href="/Items/index.html" class="blue-box"
+                                onclick="event.preventDefault(); loadContent('/Items/');"
+                                style="display: inline-block; padding: 10px 18px; background-color: #0066cc; color: white; text-decoration: none; border-radius: 5px; font-size: 15px;">Items</a>
+                        </p>
+                    </section>
+
+                    <!-- Box 2 -->
+                    <section id="box2" class="box"
+                        style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
+                        <img src="/Mobs/images/Hydra_overlord copy.png" alt="Box 2"
+                            style="max-width: 40%; height: auto;margin-top: 20px;">
+                        <p><a href="/Mobs/index.html" class="blue-box"
+                                onclick="event.preventDefault(); loadContent('/Mobs/');"
+                                style="display: inline-block; padding: 10px 18px; background-color: #0066cc; color: white; text-decoration: none; border-radius: 5px; font-size: 15px;">Mobs</a>
+                        </p>
+                    </section>
+
+                    <!-- Box 3 -->
+                    <section id="box3" class="box"
+                        style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
+                        <img src="/Items/images/80tome copy 2.png" alt="Box 3"
+                            style="max-width: 40%; height: auto;margin-top: 35px;">
+                        <p><a href="Halmgaard/ClassEquip/index.html" class="blue-box"
+                                onclick="event.preventDefault(); loadContent('/Halmgaard/ClassEquip/');"
+                                style="display: inline-block; padding: 10px 18px; background-color: #0066cc; color: white; text-decoration: none; border-radius: 5px; font-size: 15px;">
+                                Equipment Guide</a>
+                        </p>
+                    </section>
+
+                    <!-- Box 4 -->
+                    <section id="box4" class="box"
+                        style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
+                        <img src="/Halmgaard/Blacksmithing.webp" alt="Box 4"
+                            style="max-width: 50%; height: auto;margin-top: 20px;">
+                        <p><a href="Halmgaard/Blacksmithing/index.html" class="blue-box"
+                                onclick="event.preventDefault(); loadContent('/Halmgaard/Blacksmithing/');"
+                                style="display: inline-block; padding: 10px 18px; background-color: #0066cc; color: white; text-decoration: none; border-radius: 5px; font-size: 15px;">Blacksmithing</a>
+                        </p>
+                    </section>
+
+                    <!-- Box 5 -->
+                    <section id="box5" class="box"
+                        style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
+                        <img src="/Halmgaard/Enchanting.webp" alt="Box 5" style="max-width: 50%; height: auto;;">
+                        <p><a href="Halmgaard/Enchanting/index.html" class="blue-box"
+                                onclick="event.preventDefault(); loadContent('/Halmgaard/Enchanting/');"
+                                style="display: inline-block; padding: 10px 18px; background-color: #0066cc; color: white; text-decoration: none; border-radius: 5px; font-size: 15px;">Enchanting</a>
+                        </p>
+                    </section>
+
+                    <!-- Box 6 -->
+                    <section id="box6" class="box"
+                        style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
+                        <img src="/Halmgaard/HalmMap.jpeg" alt="Box 6" style="max-width: 55%; height: auto;">
+                        <p><a href="/Halmgaard/MapGuide/index.html" class="blue-box"
+                                onclick="event.preventDefault(); loadContent('/Halmgaard/MapGuide/');"
+                                style="display: inline-block; padding: 10px 18px; background-color: #0066cc; color: white; text-decoration: none; border-radius: 5px; font-size: 15px;">Map
+                                & Guides
+                            </a></p>
+                    </section>
+                    <!-- Box 7 -->
+                    <section id="box7" class="box"
+                        style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
+                        <img src="/Halmgaard/CombatSysLogo.webp" alt="Box 7" style="max-width: 60%; height: auto;">
+                        <p><a href="/Halmgaard/CombatSys/index.html" class="blue-box"
+                                onclick="event.preventDefault(); loadContent('/Halmgaard/CombatSys/');"
+                                style="display: inline-block; padding: 10px 18px; background-color: #0066cc; color: white; text-decoration: none; border-radius: 5px; font-size: 15px;">Combat
+                                System Guide
+                            </a></p>
+                    </section>
+                    <!-- Box 8 -->
+                    <section id="box8" class="box"
+                        style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
+                        <img src="/Halmgaard/QmarkLogo.webp" alt="Box 8" style="max-width: 55%; height: auto;">
+                        <p><a href="/Halmgaard/FAQPage/index.html" class="blue-box"
+                                onclick="event.preventDefault(); loadContent('/Halmgaard/FAQPage/');"
+                                style="display: inline-block; padding: 10px 18px; background-color: #0066cc; color: white; text-decoration: none; border-radius: 5px; font-size: 15px;">FAQ
+                            </a></p>
+                    </section>
+
+                    <!-- Box 9 -->
+                    <section id="box9" class="box"
+                        style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
+                        <img src="Halmgaard/Outfits.webp" alt="Box 9" style="max-width: 40%; height: auto;">
+                        <p><a href="#" class="blue-box"
+                                onclick="event.preventDefault(); loadContent('/Halmgaard/Outfits/');"
+                                style="display: inline-block; padding: 10px 18px; background-color: #0066cc; color: white; text-decoration: none; border-radius: 5px; font-size: 15px;">Outfits
+                            </a></p>
+                    </section>
+
+                    <!-- Box 10 -->
+                    <section id="box10" class="box"
+                        style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
+                        <img src="/Halmgaard/knightS.webp" alt="Box 10" style="max-width: 55%; height: auto;">
+                        <p><a href="/Halmgaard/KnightSkills/index.html" class="blue-box"
+                                onclick="event.preventDefault(); loadContent('/Halmgaard/KnightSkills/');"
+                                style="display: inline-block; padding: 10px 18px; background-color: #0066cc; color: white; text-decoration: none; border-radius: 5px; font-size: 15px;">Knight
+                                Skills
+                            </a></p>
+                    </section>
+
+                    <!-- Box 11 -->
+                    <section id="box11" class="box"
+                        style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
+                        <img src="/Halmgaard/MageS.png" alt="Box 11" style="max-width: 55%; height: auto;">
+                        <p><a href="/Halmgaard/MageSkills/index.html" class="blue-box"
+                                onclick="event.preventDefault(); loadContent('/Halmgaard/MageSkills/');"
+                                style="display: inline-block; padding: 10px 18px; background-color: #0066cc; color: white; text-decoration: none; border-radius: 5px; font-size: 15px;">Mage
+                                Skills
+                            </a></p>
+                    </section>
+
+                    <!-- Box 12 -->
+                    <section id="box12" class="box"
+                        style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;">
+                        <img src="/Halmgaard/ArcherS.png" alt="Box 12" style="max-width: 55%; height: auto;">
+                        <p><a href="/Halmgaard/ArcherSkills/index.html" class="blue-box"
+                                onclick="event.preventDefault(); loadContent('/Halmgaard/ArcherSkills/');"
+                                style="display: inline-block; padding: 10px 18px; background-color: #0066cc; color: white; text-decoration: none; border-radius: 5px; font-size: 15px;">Archer
+                                Skills
+                            </a></p>
+                    </section>
+                </div>
+
+                <div class="ad-demo top-ad-demo">
+                    BOTTOM BANNER
+                </div>
+
+                <!-- Quick Links - Mobile Only -->
+                <div class="content-box sidecontentbox" id="quicklinks-mobile"
+                    style="padding: 20px; margin-top: 20px; display: none;">
+                    <div class="vertical-sidebar">
+                        <h2>Quick Links</h2>
+                        <ul>
+
+                            <li><a href="Halmgaard/TermsService.html"
+                                    onclick="event.preventDefault(); loadContent('/Halmgaard/TermsService/');">Terms of
+                                    Service</a></li>
+                            <li><a href="Halmgaard/PrivacyPolicy.html"
+                                    onclick="event.preventDefault(); loadContent('/Halmgaard/PrivacyPolicy/');">Privacy
+                                    and Policy</a></li>
+                            <li><a href="Halmgaard/AboutPage/index.html"
+                                    onclick="event.preventDefault(); loadContent('/Halmgaard/AboutPage/');">About
+                                    Page</a></li>
+                            <li><a href="Halmgaard/ContactPage/index.html"
+                                    onclick="event.preventDefault(); loadContent('/Halmgaard/ContactPage/');">Contact
+                                    Page</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="Dark&Light.js"></script>
+    <script src="Search.js"></script>
+    <script src="SamePage.js"></script>
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const spaPath = params.get('spa');
+            if (!spaPath || typeof loadContent !== 'function') return;
+
+            const cleanPath = spaPath.endsWith('/') ? spaPath : spaPath + '/';
+            const hash = window.location.hash || '';
+            loadContent(cleanPath, false);
+
+            if (hash) {
+                setTimeout(() => {
+                    const target = document.querySelector(hash);
+                    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 0);
+            }
+        })();
+    </script>
+
+</html>
