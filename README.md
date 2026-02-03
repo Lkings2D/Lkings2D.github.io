@@ -1,4 +1,6 @@
-# Game Wiki Website
+# Halmgaard Wiki Website
+
+**Note:** Commit history has been consolidated for clarity; all code here was developed in this repository.
 
 A **static wiki-style website** built with **HTML, CSS, and JavaScript** for organizing and maintaining game content.
 
