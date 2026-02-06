@@ -538,6 +538,11 @@ table {
     margin-bottom: 24px;
 }
 
+.policy-table th {
+    background-color: #f0f0f0;
+    color: #1f2933;
+}
+
 table.wikitable {
     border-collapse: collapse;
     width: 100%;
@@ -602,6 +607,11 @@ body.dark-mode .wikitable tr:hover {
 
 body.dark-mode .wikitable td {
     color: #e0e0e0;
+}
+
+body.dark-mode .policy-table th {
+    background-color: #2f343b;
+    color: #e5e7eb;
 }
 
 /* ==================== SUBPAGE STYLES ==================== */
