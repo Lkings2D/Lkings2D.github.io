@@ -26,7 +26,7 @@ This project demonstrates skills in **web content management and front-end devel
 - Vanilla JavaScript  
 - GitHub Pages for hosting  
 
-## Live Demo
+## Live Website
 
 [View Site](https://lkings2d.github.io/)  
 
