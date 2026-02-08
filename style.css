@@ -368,8 +368,9 @@ body.dark-mode .equipment-info {
     padding: 8px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: calc(25% - 12px);
-    max-width: 220px;
+    flex: 0 1 calc(20% - 12px);
+    width: calc(20% - 12px);
+    max-width: calc(20% - 12px);
     box-sizing: border-box;
     background-image: url('/Halmgaard/LightBoxBG.jpg');
     background-size: cover;
