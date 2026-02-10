@@ -333,7 +333,9 @@ body.dark-mode header h2 {
 
 @media (max-width: 768px) {
     .back-to-top-link {
-        display: none !important;
+        display: inline-block;
+        margin-left: 8px;
+        font-size: 0.9em;
     }
 }
 
@@ -2953,4 +2955,3 @@ body.dark-mode .skill-desc {
         margin-top: 10px;
     }
 }
-
