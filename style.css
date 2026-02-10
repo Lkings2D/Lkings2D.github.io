@@ -789,7 +789,8 @@ body.dark-mode .vertical-sidebar a:hover {
 
 .ad-demo {
     background: #f0f0f0;
-    border: 2px dashed #999;
+    border: 0;
+    outline: 2px dashed #999;
     color: #555;
     font-size: 14px;
     text-align: center;
@@ -799,6 +800,7 @@ body.dark-mode .vertical-sidebar a:hover {
     height: 90px !important;
     max-height: 90px !important;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .ad-demo .adsbygoogle {
@@ -834,7 +836,7 @@ body.dark-mode .vertical-sidebar a:hover {
 body.dark-mode .ad-demo,
 body.dark .ad-demo {
     background: #1e1e1e;
-    border-color: #666;
+    outline-color: #666;
     color: #ddd;
 }
 
@@ -851,41 +853,58 @@ body.dark .ad-demo {
 
 @media (max-width: 480px) {
     .top-ad-demo {
-        max-width: 320px;
-        min-height: 100px;
-        max-height: 100px;
-        height: 100px !important;
+        width: 100% !important;
+        max-width: 412px !important;
+        min-height: 0;
+        max-height: none;
+        height: auto !important;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .ad-demo .adsbygoogle {
-        height: 100px !important;
-        max-height: 100px !important;
-        min-height: 100px !important;
+        width: 100% !important;
+        max-width: 412px !important;
+        height: auto !important;
+        max-height: none !important;
+        min-height: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
     .ad-demo .adsbygoogle iframe {
-        height: 100px !important;
-        max-height: 100px !important;
-        min-height: 100px !important;
+        width: 100% !important;
+        max-width: 412px !important;
+        height: auto !important;
+        max-height: none !important;
+        min-height: 0 !important;
     }
 
     .ad-demo [id^="aswift_"] {
-        height: 100px !important;
-        max-height: 100px !important;
-        min-height: 100px !important;
+        width: 100% !important;
+        max-width: 412px !important;
+        height: auto !important;
+        max-height: none !important;
+        min-height: 0 !important;
         overflow: hidden !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
     .ad-demo [id^="aswift_"][id$="_host"] {
-        height: 100px !important;
-        max-height: 100px !important;
-        min-height: 100px !important;
+        width: 100% !important;
+        max-width: 412px !important;
+        height: auto !important;
+        max-height: none !important;
+        min-height: 0 !important;
         overflow: hidden !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
     .ad-demo {
-        height: 100px !important;
-        max-height: 100px !important;
+        height: auto !important;
+        max-height: none !important;
     }
 }
 
