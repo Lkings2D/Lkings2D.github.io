@@ -1640,9 +1640,12 @@ body.dark-mode .skill-desc {
     color: #555;
     font-size: 14px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+}
+
+.ad-demo .adsbygoogle {
+    display: block;
+    width: 100%;
 }
 
 body.dark-mode .ad-demo {
@@ -1655,9 +1658,17 @@ body.dark-mode .ad-demo {
     width: 100%;
     max-width: 970px;
     min-width: 250px;
-    height: 120px;
+    min-height: 90px;
+    height: auto;
     margin: 15px auto;
     box-sizing: border-box;
+}
+
+@media (max-width: 420px) {
+    .top-ad-demo {
+        max-width: 100%;
+        min-height: 82px;
+    }
 }
 
 /* ==================== ANIMATIONS ==================== */
