@@ -17,9 +17,15 @@ function loadContent(folderPath, push = true) {
             const content = fetchedBox ? fetchedBox.innerHTML : doc.body.innerHTML;
             const title = doc.querySelector('title') ? doc.querySelector('title').innerText : document.title;
 
+
             const mainContent = document.querySelector('#main-content');
             mainContent.innerHTML = content;
             document.title = title;
+
+            // Refresh AdSense ad after content loads
+            if (typeof refreshAdBox === 'function') {
+                refreshAdBox();
+            }
 
             // No need to normalize - all paths are already absolute in HTML files
 
