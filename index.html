@@ -307,17 +307,11 @@
 
                 
 
-                <div class="ad-demo top-ad-demo">
-                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6607892053217120"
-                        data-ad-slot="9282367020" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                    <script>
-                        try {
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        } catch (e) {
-                            console.log('Ad failed to load');
-                        }
-                    </script>
-                </div>
+                <div class="ad-demo bottom-ad-demo"></div>
+                <script>
+                  // Initial ad load for bottom banner
+                  if (typeof refreshAdBox2 === 'function') refreshAdBox2();
+                </script>
 
                 <!-- Quick Links - Mobile Only -->
                 <div class="content-box sidecontentbox" id="quicklinks-mobile"
