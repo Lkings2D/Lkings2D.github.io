@@ -83,16 +83,16 @@
                     <h2>Quick Links</h2>
                     <ul>
                         <li><a href="index.html" onclick="event.preventDefault(); loadContent('/');">Home</a></li>
-                        <li><a href="Halmgaard/TermsService.html"
+                        <li><a href="/Halmgaard/TermsService/index.html"
                                 onclick="event.preventDefault(); loadContent('/Halmgaard/TermsService/');">Terms of
                                 Service</a></li>
-                        <li><a href="Halmgaard/PrivacyPolicy.html"
+                        <li><a href="/Halmgaard/PrivacyPolicy/index.html"
                                 onclick="event.preventDefault(); loadContent('/Halmgaard/PrivacyPolicy/');">Privacy and
                                 Policy</a></li>
-                        <li><a href="Halmgaard/AboutPage/index.html"
+                        <li><a href="/Halmgaard/AboutPage/index.html"
                                 onclick="event.preventDefault(); loadContent('/Halmgaard/AboutPage/');">About Page</a>
                         </li>
-                        <li><a href="Halmgaard/ContactPage/index.html"
+                        <li><a href="/Halmgaard/ContactPage/index.html"
                                 onclick="event.preventDefault(); loadContent('/Halmgaard/ContactPage/');">Contact
                                 Page</a></li>
 
@@ -326,10 +326,10 @@
                         <h2>Quick Links</h2>
                         <ul>
 
-                            <li><a href="Halmgaard/TermsService.html"
+                            <li><a href="Halmgaard/TermsService/index.html"
                                     onclick="event.preventDefault(); loadContent('/Halmgaard/TermsService/');">Terms of
                                     Service</a></li>
-                            <li><a href="Halmgaard/PrivacyPolicy.html"
+                            <li><a href="Halmgaard/PrivacyPolicy/index.html"
                                     onclick="event.preventDefault(); loadContent('/Halmgaard/PrivacyPolicy/');">Privacy
                                     and Policy</a></li>
                             <li><a href="Halmgaard/AboutPage/index.html"
@@ -356,9 +356,13 @@
     <script>
         (function () {
             const params = new URLSearchParams(window.location.search);
-            const spaPath = params.get('spa');
+            let spaPath = params.get('spa');
             if (!spaPath || typeof loadContent !== 'function') return;
 
+            // Remove trailing /index.html if present
+            if (spaPath.endsWith('/index.html')) {
+                spaPath = spaPath.slice(0, -'/index.html'.length);
+            }
             const cleanPath = spaPath.endsWith('/') ? spaPath : spaPath + '/';
             const hash = window.location.hash || '';
             loadContent(cleanPath, false);
