@@ -475,9 +475,27 @@ body.dark-mode .wiki-content .accent {
     gap: 15px;
     justify-content: center;
 }
+    @media (max-width: 768px) {
+        .box-container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .box {
+            width: 100% !important;
+            max-width: 95vw;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 12px;
+            padding-right: 12px;
+            margin-bottom: 18px;
+            border: 2px solid #ff9900 !important;
+            box-sizing: border-box;
+        }
+    }
 
 .box {
-    border: 1px solid #ddd;
+    border: 2px solid #ff9900 !important;
     padding: 8px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
